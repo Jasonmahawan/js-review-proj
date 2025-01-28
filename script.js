@@ -17,7 +17,7 @@ function renderTodos() {
         li.innerHTML = `
             <span>${todo}</span>
             <button onclick="editTodo(${index})">Edit</button>
-            <button onclick="deleteTodo(${index})">Delete</>
+            <button onclick="deleteTodo(${index})">Delete</button>
         `;
         todoList.appendChild(li);
     });
@@ -52,7 +52,7 @@ function deleteTodo(index){
 }
 
 // Event Listeners
-todo.Form.addEventListener('submit', addTodo);
+todoForm.addEventListener('submit', addTodo);
 
 // Initial render
 renderTodos();
